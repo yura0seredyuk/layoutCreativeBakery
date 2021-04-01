@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Creative Bakery</title>
     <link rel="stylesheet" href="./styles/style.scss">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie:regular" rel="stylesheet">
@@ -89,9 +89,9 @@
               </p>
             </div>
 
-            <div class="header__button">
+            <a href="#bakery" class="header__button">
               Learn more
-            </div>
+            </a>
           </div>
 
           <div class="header__side side">
@@ -102,7 +102,9 @@
                 </a>
               </div>
               <div class="side__number-button">
-                Call back
+                <a href="tel:+380663363636" class="side__number-tel">
+                  Call back
+                </a>
               </div>
               <div class="side__change">
                 <label for="language" class="side__change-language"></label>
@@ -520,51 +522,54 @@
             <p class="contacts__form-header">
               We’d love to hear your feedback
             </p>
-            <label for="name">
-              <input
-                type="text"
-                id="name"
-                placeholder="Name*"
-                class="contacts__form-input"
-                required
-              >
-            </label>
+            <form>
+              <label for="name">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Name*"
+                  class="contacts__form-input"
+                  required
+                >
+              </label>
 
-            <label for="email">
-              <input
-                type="email"
-                id="email"
-                placeholder="Email*"
-                class="contacts__form-input"
-                pattern=".+@globex.com"
-                size="30"
-                required
-              >
-            </label>
+              <label for="email">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email*"
+                  class="contacts__form-input"
+                  size="30"
+                  required
+                >
+              </label>
 
-            <label for="tel">
-              <input
-                type="tel"
-                id="tel"
-                placeholder="Phone"
-                class="contacts__form-input"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              >
-            </label>
+              <label for="tel">
+                <input
+                  type="tel"
+                  id="tel"
+                  placeholder="Phone"
+                  class="contacts__form-input"
+                >
+              </label>
 
-            <label for="message">
-              <input
-                type="message"
-                id="message"
-                placeholder="Message*"
-                class="contacts__form-input contacts__form-message"
-                required
-              >
-            </label>
+              <label for="message">
+                <input
+                  type="message"
+                  id="message"
+                  placeholder="Message*"
+                  class="contacts__form-input contacts__form-message"
+                  required
+                >
+              </label>
 
-            <div class="contacts__button button">
-              Send
-            </div>
+              <button
+                class="contacts__button button"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -603,17 +608,29 @@
 
         <div class="footer__icons">
           <div class="footer__icon">
-            <a href="#">
+            <a
+              href="https://twitter.com/creativebkry"
+              target="_blank"
+              rel="noopener"
+            >
               <img src="images/footer/twitter.svg" alt="icon twitter">
             </a>
           </div>
           <div class="footer__icon">
-            <a href="#">
-              <img src="images/footer/twitter.svg" alt="icon facebook">
+            <a
+              href="https://www.facebook.com/ViCake.Creative.Bakery/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/footer/facebook.svg" alt="icon facebook">
             </a>
           </div>
           <div class="footer__icon">
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/creative-bakery"
+              target="_blank"
+              rel="noopener"
+            >
               <img src="images/footer/linkedin.svg" alt="icon linked in">
             </a>
           </div>
